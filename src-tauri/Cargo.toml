@@ -1,0 +1,25 @@
+[package]
+name = "disksage"
+version = "0.1.0"
+description = "DiskSage desktop app"
+authors = ["DiskSage"]
+license = "MIT"
+repository = ""
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+dirs = "5"
+md5 = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+tauri = { version = "1.6", features = ["dialog-all", "fs-all", "path-all", "shell-open"] }
+trash = "5"
+walkdir = "2.5"
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
