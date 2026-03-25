@@ -1,5 +1,7 @@
+/** Represents the available navigation tabs in the application */
 export type TabKey = "overview" | "large" | "duplicates" | "unused" | "temp";
 
+/** Represents a file entry with metadata */
 export interface FileEntry {
   path: string;
   size: number;
