@@ -11,12 +11,14 @@ export interface FileEntry {
   is_hidden: boolean;
 }
 
+/** Represents a group of duplicate files with the same hash */
 export interface DuplicateGroup {
   hash: string;
   files: FileEntry[];
   total_size: number;
 }
 
+/** Represents a cleanup recommendation */
 export interface Recommendation {
   id: string;
   reason: string;
