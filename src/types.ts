@@ -27,6 +27,7 @@ export interface Recommendation {
   files: FileEntry[];
 }
 
+/** Represents a temporary file category */
 export interface TempCategory {
   label: string;
   path: string;
